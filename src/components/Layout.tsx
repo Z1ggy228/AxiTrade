@@ -45,7 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href="https://www.instagram.com/axitradeofficial?igsh=eGN6NjhkN2Q1dzRs&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 hover:bg-green-50 rounded-lg transition"
+                className="hidden sm:block p-2 hover:bg-green-50 rounded-lg transition"
                 aria-label="Instagram"
               >
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-8 sm:h-8">
@@ -67,7 +67,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href="https://t.me/axi_trade"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 hover:bg-green-50 rounded-lg transition"
+                className="hidden sm:block p-2 hover:bg-green-50 rounded-lg transition"
                 aria-label="Telegram"
               >
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-8 sm:h-8">
@@ -80,7 +80,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 href="https://x.com/axi_trade?s=21"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 hover:bg-green-50 rounded-lg transition"
+                className="hidden sm:block p-2 hover:bg-green-50 rounded-lg transition"
                 aria-label="Twitter"
               >
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-8 sm:h-8">
