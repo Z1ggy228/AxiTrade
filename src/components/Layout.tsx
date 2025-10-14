@@ -21,12 +21,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               </Link>
             </div>
 
-            <div className="flex items-center gap-1.5 sm:gap-2 overflow-x-auto scrollbar-hide flex-1 lg:flex-initial justify-center lg:justify-start">
+            <div className="flex items-center gap-1 sm:gap-2 overflow-x-auto scrollbar-hide flex-1 lg:flex-initial justify-center lg:justify-start">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`px-2 sm:px-3 lg:px-5 py-1.5 sm:py-2 lg:py-2.5 text-xs sm:text-sm lg:text-base whitespace-nowrap rounded-lg transition font-medium ${
+                  className={`px-1.5 sm:px-3 lg:px-5 py-1.5 sm:py-2 lg:py-2.5 text-xs sm:text-sm lg:text-base whitespace-nowrap rounded-lg transition font-medium ${
                     location.pathname === link.path
                       ? 'bg-green-500 text-white font-semibold'
                       : 'text-gray-700 hover:bg-green-50 hover:text-green-500'
