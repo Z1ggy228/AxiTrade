@@ -171,6 +171,123 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-12 sm:py-16 md:py-20 bg-white">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600">
+              Real experiences from our valued traders
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-7xl mx-auto">
+            <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <img
+                  src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  alt="John Smith"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-900 text-base sm:text-lg">John Smith</h4>
+                  <div className="flex text-yellow-500">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 italic">
+                "My experience with the platform has been excellent. The profits exceeded my expectations, and my personal account manager supported me every step of the way. Truly grateful!"
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <img
+                  src="https://images.pexels.com/photos/2773977/pexels-photo-2773977.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  alt="Ahmed Al-Farsi"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-900 text-base sm:text-lg">Ahmed Al-Farsi</h4>
+                  <div className="flex text-yellow-500">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 italic">
+                "A very reliable platform. My account manager was professional and helped me with every detail. I felt safe while trading."
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <img
+                  src="https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  alt="Olivia Brown"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-900 text-base sm:text-lg">Olivia Brown</h4>
+                  <div className="flex text-yellow-500">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 italic">
+                "Thank you for the great results! I was able to achieve real profits, and the guidance from my account manager was spot on from the beginning."
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <img
+                  src="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  alt="Mona Hussein"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-900 text-base sm:text-lg">Mona Hussein</h4>
+                  <div className="flex text-yellow-500">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 italic">
+                "I'm new to trading, but with the support I received—especially from my personal manager—I was able to move forward confidently. Thank you!"
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <img
+                  src="https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  alt="David Lee"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-900 text-base sm:text-lg">David Lee</h4>
+                  <div className="flex text-yellow-500">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 italic">
+                "An excellent and user-friendly platform. Most importantly, my account manager gave me strategies that worked 100%. Much appreciated!"
+              </p>
+            </div>
+
+            <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
+              <div className="flex items-center mb-4 sm:mb-6">
+                <img
+                  src="https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  alt="Rami Khalil"
+                  className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-900 text-base sm:text-lg">Rami Khalil</h4>
+                  <div className="flex text-yellow-500">★★★★★</div>
+                </div>
+              </div>
+              <p className="text-sm sm:text-base text-gray-600 italic">
+                "I appreciated the transparency and clarity from the start. My account manager was always available to answer any questions. Very professional platform."
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="py-12 sm:py-16 md:py-20 bg-green-50">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="text-center mb-12 sm:mb-16">

@@ -77,17 +77,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                 </svg>
               </a>
               <a
-                href="https://x.com/axi_trade?s=21"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hidden sm:block p-2 hover:bg-green-50 rounded-lg transition"
-                aria-label="Twitter"
-              >
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-7 sm:h-7">
-                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#000000"/>
-                </svg>
-              </a>
-              <a
                 href="https://cabinet.globalaxitrade.com/auth/login"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -167,17 +156,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                         <path d="M16.5 8L11 13.5L9 15.5" stroke="white" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
                     </a>
-                    <a
-                      href="https://x.com/axi_trade?s=21"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-2 hover:bg-green-50 rounded-lg transition"
-                      aria-label="Twitter"
-                    >
-                      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#000000"/>
-                      </svg>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -236,17 +214,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                       <circle cx="12" cy="12" r="10" fill="#0088cc"/>
                       <path d="M7.5 11.5L16.5 8L14 16L11 13.5L9 15.5L8.5 13L7.5 11.5Z" fill="white"/>
                       <path d="M16.5 8L11 13.5L9 15.5" stroke="white" strokeWidth="0.5" strokeLinecap="round" strokeLinejoin="round"/>
-                    </svg>
-                  </a>
-                  <a
-                    href="https://x.com/axi_trade?s=21"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 hover:bg-gray-800 rounded-lg transition"
-                    aria-label="Twitter"
-                  >
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="sm:w-7 sm:h-7">
-                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" fill="#FFFFFF"/>
                     </svg>
                   </a>
                 </div>
