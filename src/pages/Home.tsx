@@ -203,7 +203,7 @@ export default function Home() {
             <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
               <div className="flex items-center mb-4 sm:mb-6">
                 <img
-                  src="https://images.pexels.com/photos/2773977/pexels-photo-2773977.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop"
+                  src="/Screenshot_3.png"
                   alt="Ahmed Al-Farsi"
                   className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
                 />
