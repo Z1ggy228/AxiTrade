@@ -95,7 +95,7 @@ export default function Contacts() {
                   </div>
                   <div className="ml-3 sm:ml-4">
                     <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                    <p className="text-sm sm:text-base text-gray-600">+1 (555) 123-4567</p>
+                    <p className="text-sm sm:text-base text-gray-600">+44 74 8886 4747</p>
                     <p className="text-xs sm:text-sm text-gray-500 mt-1">Monday - Friday, 9AM - 6PM EST</p>
                   </div>
                 </div>
@@ -107,9 +107,9 @@ export default function Contacts() {
                   <div className="ml-3 sm:ml-4">
                     <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">Office</h3>
                     <p className="text-sm sm:text-base text-gray-600">
-                      123 Trading Street<br />
-                      Financial District<br />
-                      New York, NY 10004
+                      1 Finsbury Market<br />
+                      London EC2A 2BN<br />
+                      United Kingdom
                     </p>
                   </div>
                 </div>
@@ -237,7 +237,7 @@ export default function Contacts() {
 
             <div className="bg-white p-5 sm:p-6 rounded-xl">
               <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">What is the minimum deposit?</h3>
-              <p className="text-sm sm:text-base text-gray-600">Standard accounts start from just $100.</p>
+              <p className="text-sm sm:text-base text-gray-600">Standard accounts start from just $250.</p>
             </div>
 
             <div className="bg-white p-5 sm:p-6 rounded-xl">

@@ -186,7 +186,7 @@ export default function Home() {
                 <ChevronDown className="w-5 h-5 text-gray-500 group-open:rotate-180 transition-transform flex-shrink-0 ml-2" />
               </summary>
               <p className="mt-3 sm:mt-4 text-sm sm:text-base text-gray-600">
-                The minimum deposit varies by account type, starting from as low as $100 for standard accounts.
+                The minimum deposit varies by account type, starting from as low as $250 for standard accounts.
               </p>
             </details>
 
