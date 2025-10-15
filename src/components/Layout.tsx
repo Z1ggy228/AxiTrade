@@ -64,21 +64,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {link.label}
                 </Link>
               ))}
-              {user && (
-                <Link
-                  to="/admin"
-                  className={`relative px-5 py-2.5 text-base whitespace-nowrap rounded-lg transition font-medium ${
-                    location.pathname === '/admin'
-                      ? 'bg-green-500 text-white font-semibold'
-                      : 'text-gray-700 hover:bg-green-50 hover:text-green-500'
-                  }`}
-                >
-                  ОБРАЩЕНИЯ
-                  {unreadCount > 0 && (
-                    <Star className="w-4 h-4 text-red-500 fill-red-500 absolute -top-1 -right-1" />
-                  )}
-                </Link>
-              )}
             </div>
 
             <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
@@ -159,22 +144,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     {link.label}
                   </Link>
                 ))}
-                {user && (
-                  <Link
-                    to="/admin"
-                    onClick={() => setIsMenuOpen(false)}
-                    className={`relative px-4 py-3 text-base rounded-lg transition font-medium ${
-                      location.pathname === '/admin'
-                        ? 'bg-green-500 text-white font-semibold'
-                        : 'text-gray-700 hover:bg-green-50 hover:text-green-500'
-                    }`}
-                  >
-                    ОБРАЩЕНИЯ
-                    {unreadCount > 0 && (
-                      <Star className="w-4 h-4 text-red-500 fill-red-500 absolute top-3 right-3" />
-                    )}
-                  </Link>
-                )}
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <p className="px-4 py-2 text-sm text-gray-500 font-medium">Follow Us</p>
                   <div className="flex items-center justify-center gap-4 px-4 py-2">
