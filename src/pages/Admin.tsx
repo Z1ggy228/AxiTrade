@@ -151,7 +151,11 @@ export default function Admin() {
               {submissions.map((submission) => (
                 <div
                   key={submission.id}
-                  className="p-6 hover:bg-gray-50 transition cursor-pointer"
+                  className={`p-6 transition cursor-pointer ${
+                    submission.status === 'new'
+                      ? 'bg-green-50 hover:bg-green-100'
+                      : 'bg-white hover:bg-gray-50'
+                  }`}
                   onClick={() => setSelectedSubmission(submission)}
                 >
                   <div className="flex justify-between items-start mb-3">
