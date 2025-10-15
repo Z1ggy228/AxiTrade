@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../contexts/AuthContext';
 import { supabase } from '../lib/supabase';
 import type { ContactSubmission } from '../lib/supabase';
-import { Mail, User, Clock, LogOut, RefreshCw } from 'lucide-react';
+import { Mail, User, Clock, LogOut, RefreshCw, Trash2 } from 'lucide-react';
 
 export default function Admin() {
   const { user, signOut, loading: authLoading } = useAuth();
@@ -52,6 +52,25 @@ export default function Admin() {
       loadSubmissions();
     } catch (error) {
       console.error('Error updating status:', error);
+    }
+  };
+
+  const deleteSubmission = async (id: string) => {
+    if (!confirm('Are you sure you want to delete this submission?')) {
+      return;
+    }
+
+    try {
+      const { error } = await supabase
+        .from('contact_submissions')
+        .delete()
+        .eq('id', id);
+
+      if (error) throw error;
+      setSelectedSubmission(null);
+      loadSubmissions();
+    } catch (error) {
+      console.error('Error deleting submission:', error);
     }
   };
 
@@ -184,6 +203,16 @@ export default function Admin() {
                         Mark as Responded
                       </button>
                     )}
+                    <button
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        deleteSubmission(submission.id);
+                      }}
+                      className="px-3 py-1 bg-red-500 text-white rounded text-sm hover:bg-red-600 transition flex items-center gap-1"
+                    >
+                      <Trash2 className="w-3 h-3" />
+                      Delete
+                    </button>
                   </div>
                 </div>
               ))}
@@ -264,6 +293,13 @@ export default function Admin() {
                     Mark as Responded
                   </button>
                 )}
+                <button
+                  onClick={() => deleteSubmission(selectedSubmission.id)}
+                  className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition flex items-center gap-2"
+                >
+                  <Trash2 className="w-5 h-5" />
+                  Delete
+                </button>
               </div>
             </div>
           </div>

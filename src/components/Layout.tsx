@@ -1,10 +1,36 @@
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, Instagram } from 'lucide-react';
-import { useState } from 'react';
+import { Menu, X, Instagram, Star } from 'lucide-react';
+import { useState, useEffect } from 'react';
+import { useAuth } from '../contexts/AuthContext';
+import { supabase } from '../lib/supabase';
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { user } = useAuth();
+  const [unreadCount, setUnreadCount] = useState(0);
+
+  useEffect(() => {
+    if (user) {
+      loadUnreadCount();
+      const interval = setInterval(loadUnreadCount, 30000);
+      return () => clearInterval(interval);
+    }
+  }, [user]);
+
+  const loadUnreadCount = async () => {
+    try {
+      const { count, error } = await supabase
+        .from('contact_submissions')
+        .select('*', { count: 'exact', head: true })
+        .eq('status', 'new');
+
+      if (error) throw error;
+      setUnreadCount(count || 0);
+    } catch (error) {
+      console.error('Error loading unread count:', error);
+    }
+  };
 
   const navLinks = [
     { path: '/', label: 'Home' },
@@ -20,7 +46,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="flex items-center justify-between gap-3 sm:gap-4">
             <div className="flex items-center flex-shrink-0">
               <Link to="/">
-                <img src="/axi Black .png" alt="Axi Trade" className="h-16 sm:h-20 lg:h-32" />
+                <img src="/axi icon.png" alt="Axi Trade" className="h-16 sm:h-20 lg:h-32" />
               </Link>
             </div>
 
@@ -38,6 +64,21 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                   {link.label}
                 </Link>
               ))}
+              {user && (
+                <Link
+                  to="/admin"
+                  className={`relative px-5 py-2.5 text-base whitespace-nowrap rounded-lg transition font-medium ${
+                    location.pathname === '/admin'
+                      ? 'bg-green-500 text-white font-semibold'
+                      : 'text-gray-700 hover:bg-green-50 hover:text-green-500'
+                  }`}
+                >
+                  ОБРАЩЕНИЯ
+                  {unreadCount > 0 && (
+                    <Star className="w-4 h-4 text-red-500 fill-red-500 absolute -top-1 -right-1" />
+                  )}
+                </Link>
+              )}
             </div>
 
             <div className="flex items-center gap-2 sm:gap-3 flex-shrink-0">
@@ -118,6 +159,22 @@ export default function Layout({ children }: { children: React.ReactNode }) {
                     {link.label}
                   </Link>
                 ))}
+                {user && (
+                  <Link
+                    to="/admin"
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`relative px-4 py-3 text-base rounded-lg transition font-medium ${
+                      location.pathname === '/admin'
+                        ? 'bg-green-500 text-white font-semibold'
+                        : 'text-gray-700 hover:bg-green-50 hover:text-green-500'
+                    }`}
+                  >
+                    ОБРАЩЕНИЯ
+                    {unreadCount > 0 && (
+                      <Star className="w-4 h-4 text-red-500 fill-red-500 absolute top-3 right-3" />
+                    )}
+                  </Link>
+                )}
                 <div className="mt-4 pt-4 border-t border-gray-200">
                   <p className="px-4 py-2 text-sm text-gray-500 font-medium">Follow Us</p>
                   <div className="flex items-center justify-center gap-4 px-4 py-2">
@@ -171,7 +228,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div className="max-w-6xl mx-auto">
             <div className="flex flex-col items-center mb-4 sm:mb-12">
               <div className="mb-3 sm:mb-6">
-                <img src="/axi Black .png" alt="Axi Trade" className="h-12 sm:h-24 md:h-28 brightness-0 invert opacity-90" />
+                <img src="/axi icon.png" alt="Axi Trade" className="h-12 sm:h-24 md:h-28 brightness-0 invert opacity-90" />
               </div>
               <p className="text-center text-xs sm:text-base md:text-lg text-gray-400 max-w-2xl px-4">
                 Professional trading platform for global financial markets
