@@ -117,7 +117,7 @@ export default function Home() {
             </div>
             <div className="rounded-2xl overflow-hidden">
               <img
-                src="/2025-10-14_17-02-37.png"
+                src="/2025-10-14_17-02-37 copy.png"
                 alt="Trading Platform"
                 className="w-full h-auto"
               />
@@ -203,7 +203,7 @@ export default function Home() {
             <div className="bg-green-50 p-6 sm:p-8 rounded-xl shadow-sm hover:shadow-md transition">
               <div className="flex items-center mb-4 sm:mb-6">
                 <img
-                  src="/Screenshot_3.png"
+                  src="/Screenshot_14 copy copy.png"
                   alt="Ahmed Al-Farsi"
                   className="w-12 h-12 sm:w-14 sm:h-14 rounded-full object-cover mr-4"
                 />
