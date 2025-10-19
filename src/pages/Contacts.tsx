@@ -102,20 +102,6 @@ export default function Contacts() {
 
                 <div className="flex items-start">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                    <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-green-500" />
-                  </div>
-                  <div className="ml-3 sm:ml-4">
-                    <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-1">Office</h3>
-                    <p className="text-sm sm:text-base text-gray-600">
-                      1 Finsbury Market<br />
-                      London EC2A 2BN<br />
-                      United Kingdom
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
                     <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-green-500" />
                   </div>
                   <div className="ml-3 sm:ml-4">
